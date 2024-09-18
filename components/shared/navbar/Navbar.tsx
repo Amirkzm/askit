@@ -6,6 +6,7 @@ import Link from "next/link";
 import React from "react";
 import ThemePicker from "./ThemePicker";
 import MobileNav from "./MobileNav";
+import GlobalSearch from "../search/GlobalSearch";
 
 const Navbar = () => {
   return (
@@ -22,6 +23,8 @@ const Navbar = () => {
           Ask <span className="text-primary-500">It</span>
         </p>
       </Link>
+
+      <GlobalSearch />
 
       <div className="flex-between gap-5">
         <SignedIn>

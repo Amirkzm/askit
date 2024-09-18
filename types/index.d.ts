@@ -3,3 +3,10 @@ export interface SidebarLink {
   route: string;
   label: string;
 }
+
+export interface NavigatorItem {
+  title: string;
+  value: number;
+  icon: string;
+  route: string;
+}
