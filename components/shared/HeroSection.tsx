@@ -5,13 +5,15 @@ import { Button } from "../ui/button";
 const HeroSection = () => {
   return (
     <section
-      className={` ${styles.hero} relative w-full h-[600px] bg-cover bg-center bg-orange-100 `}
+      className={` ${styles.hero} relative  h-[600px] bg-cover bg-center  `}
     >
       <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-      <div className="absolute inset-0 flex-between top-[40%] left-48">
-        <div className="text-white base-bold text-left">
-          <h1 className="text-4xl font-bold">Let's not waste the time</h1>
-          <p className="text-lg">Find The Answers Faster</p>
+      <div className="absolute inset-0 flex-between top-[40%] left-[5%]">
+        <div className="text-white base-bold text-left ![font-size:_clamp(2rem,5vw,4rem)] leading-8 md:leading-tight">
+          <h1 className="">Let's not waste the time</h1>
+          <p className="![font-size:_clamp(1rem,3vw,2rem)]">
+            Find The Answers Faster
+          </p>
           <Button>Start Here</Button>
         </div>
       </div>
