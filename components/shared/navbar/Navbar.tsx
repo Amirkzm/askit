@@ -7,6 +7,7 @@ import React from "react";
 import ThemePicker from "./ThemePicker";
 import MobileNav from "./MobileNav";
 import GlobalSearch from "../search/GlobalSearch";
+import Navigator from "../navigator/Navigator";
 
 const Navbar = () => {
   return (
@@ -24,8 +25,8 @@ const Navbar = () => {
         </p>
       </Link>
 
-      <div className="hidden md:block md:w-[50%] md:flex-center">
-        <GlobalSearch />
+      <div>
+        <Navigator />
       </div>
 
       <div className="flex-between gap-5  flex-grow-0">

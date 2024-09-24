@@ -1,9 +1,9 @@
 "use client";
-import { tempNavigatorItems } from "@/constants/tempConst";
 import React, { useEffect, useRef, useState } from "react";
 import NavigatorItem from "./NavigatorItem";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { tempNavigatorItems } from "@/constants/tempConst.tsx";
 
 const Navigator = () => {
   const pathname = usePathname();
@@ -27,7 +27,7 @@ const Navigator = () => {
   }, [activeTabIndex]);
 
   return (
-    <div className="flex-between transition-all relative">
+    <div className="md:flex-between transition-all relative gap-2">
       <div
         className="primary-gradient text-light-900 absolute bottom-0 top-0 transition-all duration-300 bg-gray-200/30 rounded-xl -z-1"
         style={{ left: activeTabLeft, width: activeTabWidth }}

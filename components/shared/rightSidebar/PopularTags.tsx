@@ -1,4 +1,4 @@
-import { tempPopularTags } from "@/constants/tempConst";
+import { tempPopularTags } from "@/constants/tempConst.tsx";
 import Link from "next/link";
 import React from "react";
 
@@ -10,7 +10,7 @@ const PopularTags = () => {
         {tempPopularTags.map((tag) => (
           <Link
             href="#"
-            className="rounded-lg text-xs background-light900_dark200 p-2 cursor-pointer text-center base-bold  text-dark200_light900 hover:background-light800_dark300"
+            className="rounded-lg text-xs background-light700_dark400 p-2 cursor-pointer text-center base-bold  text-dark200_light900 hover:background-light800_dark300"
             key={tag.id}
           >
             {tag.name}

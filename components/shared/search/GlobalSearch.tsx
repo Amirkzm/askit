@@ -5,7 +5,11 @@ import React, { useEffect, useRef, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
-const GlobalSearch = () => {
+interface GlobalSearchProps {
+  className?: string;
+}
+
+const GlobalSearch: React.FC<GlobalSearchProps> = ({ className }) => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -39,10 +43,12 @@ const GlobalSearch = () => {
 
   return (
     <div
-      className="relative w-full max-w-[600px] max-lg:hidden"
+      className={`relative max-lg:hidden ${className}`}
       ref={searchContainerRef}
     >
-      <div className="background-light800_darkgradient relative flex min-h-[56px] grow items-center gap-1 rounded-xl px-4">
+      <div
+        className={`background-light800_darkgradient relative flex min-h-[56px] grow items-center gap-1 rounded-xl px-4`}
+      >
         <Image
           src="/icons/search.svg"
           alt="search"

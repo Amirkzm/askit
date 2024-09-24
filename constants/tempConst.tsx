@@ -1,5 +1,5 @@
 import { NavigatorItem } from "@/types";
-import PopularTags from "../components/shared/rightSidebar/PopularTags";
+import { MdOutlineComputer } from "react-icons/md";
 
 export const tempNavigatorItems: NavigatorItem[] = [
   {
@@ -39,6 +39,8 @@ export const tempLatestQuestions = [
     answers: 5,
     views: 100,
     tags: ["html", "css", "javascript"],
+    owner: "John Doe",
+    category: "Computer",
   },
   {
     id: 2,
@@ -47,7 +49,9 @@ export const tempLatestQuestions = [
     votes: 10,
     answers: 5,
     views: 100,
-    tags: ["html", "css", "javascript"],
+    tags: ["html", "visual basic", "javascript"],
+    owner: "Haj Kazem",
+    category: "Computer",
   },
   {
     id: 3,
@@ -57,6 +61,8 @@ export const tempLatestQuestions = [
     answers: 5,
     views: 100,
     tags: ["html", "css", "javascript"],
+    owner: "Ali Reza",
+    category: "Computer",
   },
   {
     id: 4,
@@ -65,7 +71,9 @@ export const tempLatestQuestions = [
     votes: 10,
     answers: 5,
     views: 100,
-    tags: ["html", "css", "javascript"],
+    tags: ["html", "typescript", "java"],
+    owner: "Bagher Italy",
+    category: "Computer",
   },
 ];
 
@@ -101,16 +109,181 @@ export const popularCatgories = [
     followers: 200,
   },
   {
+    id: 7,
+    name: "Technology",
+    questions: 100,
+    followers: 200,
+  },
+];
+
+export const tempCatgories = [
+  {
+    id: 1,
+    name: "Computer",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 2,
+    name: "health & fitness",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 3,
+    name: "Science",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 4,
+    name: "Engineering",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 5,
+    name: "Politics",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
     id: 6,
     name: "Religion",
     questions: 100,
     followers: 200,
+    icon: <MdOutlineComputer />,
   },
   {
     id: 7,
     name: "Technology",
     questions: 100,
     followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 8,
+    name: "Business",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 9,
+    name: "Economy",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 10,
+    name: "Education",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 11,
+    name: "History",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 12,
+    name: "Art",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 13,
+    name: "Music",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 14,
+    name: "Sport",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 15,
+    name: "Cinema",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 16,
+    name: "Literature",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 17,
+    name: "Philosophy",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 18,
+    name: "Psychology",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 19,
+    name: "Sociology",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 20,
+    name: "Geography",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 21,
+    name: "Mathematics",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 22,
+    name: "Physics",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 23,
+    name: "Chemistry",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
+  },
+  {
+    id: 24,
+    name: "Biology",
+    questions: 100,
+    followers: 200,
+    icon: <MdOutlineComputer />,
   },
 ];
 

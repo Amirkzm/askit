@@ -1,4 +1,4 @@
-import { popularCatgories } from "@/constants/tempConst";
+import { popularCatgories } from "@/constants/tempConst.tsx";
 import React from "react";
 
 const PopularCategories = () => {
@@ -9,7 +9,7 @@ const PopularCategories = () => {
         <div className="flex gap-4 flex-wrap ">
           {popularCatgories.map((category) => (
             <p
-              className="rounded-lg text-xs background-light900_dark200 p-2 w-full cursor-pointer text-center base-bold  text-dark200_light900 hover:background-light800_dark300"
+              className="rounded-lg text-xs background-light700_dark400 p-2 w-full cursor-pointer text-center base-bold  text-dark200_light900 hover:background-light800_dark300"
               key={category.name}
             >
               {category.name}
