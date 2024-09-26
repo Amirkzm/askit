@@ -1,7 +1,8 @@
+import Tags from "@/components/shared/tags/Tags";
 import React from "react";
 
 const page = () => {
-  return <div>tags</div>;
+  return <Tags />;
 };
 
 export default page;
