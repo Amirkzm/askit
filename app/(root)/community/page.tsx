@@ -1,7 +1,12 @@
+import Community from "@/components/shared/community/Community";
 import React from "react";
 
 const page = () => {
-  return <div>community</div>;
+  return (
+    <div>
+      <Community />
+    </div>
+  );
 };
 
 export default page;

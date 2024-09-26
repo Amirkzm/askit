@@ -124,6 +124,25 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function ({
+      addUtilities,
+    }: {
+      addUtilities: (utilities: Record<string, any>) => void;
+    }) {
+      addUtilities({
+        ".no-scrollbar": {
+          /* Hide scrollbar for Webkit browsers */
+          "-webkit-overflow-scrolling": "touch",
+          "scrollbar-width": "none" /* Firefox */,
+          "-ms-overflow-style": "none" /* Internet Explorer 10+ */,
+        },
+        ".no-scrollbar::-webkit-scrollbar": {
+          display: "none" /* Safari and Chrome */,
+        },
+      });
+    },
+  ],
 };
 export default config;
