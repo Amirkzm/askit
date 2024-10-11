@@ -6,7 +6,6 @@ import Link from "next/link";
 import React from "react";
 import ThemePicker from "./ThemePicker";
 import MobileNav from "./MobileNav";
-import GlobalSearch from "../search/GlobalSearch";
 import Navigator from "../navigator/Navigator";
 
 const Navbar = () => {

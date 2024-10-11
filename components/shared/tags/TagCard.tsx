@@ -20,7 +20,7 @@ const TagCard: React.FC<TagCardProps> = ({
       href={"#"}
       className="flex flex-col background-light900_dark200 !text-dark100_light900 shadow-lg p-6 gap-4 flex-grow justify-between"
     >
-      <h3 className="background-light700_dark300 p-2 base-bold text-sm">
+      <h3 className="background-light700_dark300 p-2 base-bold text-sm text-dark-400">
         {tagTitle}
       </h3>
       <p className="p-2 text-sm">{description}</p>

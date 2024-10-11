@@ -25,15 +25,19 @@ const ViewMoreItems: React.FC<ViewMoreButtonProps> = ({
 
   return (
     <Collapsible
-      className={`!transition-all ${
-        ContainerClassNames ?? "w-full flex-wrap flex-end"
+      className={`!transition-all flex ${
+        ContainerClassNames ?? "w-full flex-wrap"
       }`}
     >
       <CollapsibleTrigger
-        className={`${isOpen ? "hidden" : ""} text-primary_gradient base-bold`}
+        className={`${
+          isOpen ? "hidden" : ""
+        } text-primary_gradient base-bold mx-auto`}
         onClick={() => setIsOpen((prev) => !prev)}
       >
-        {showMoreComponent ?? (
+        {showMoreComponent ? (
+          <div className="self-center">{showMoreComponent}</div>
+        ) : (
           <p className="!w-full text-center p-4 ">
             Show More Items <span className="ml-4">&#8744;</span>
           </p>
